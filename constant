@@ -1,2 +1,5 @@
+cd /home/joe/cron
+git pull
+
 mkdir -p /tmp/cron
 echo "Hello" >> /tmp/cron/constant.out
