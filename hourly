@@ -1,0 +1,1 @@
+echo "hourly" >> /tmp/cron/hourly.out

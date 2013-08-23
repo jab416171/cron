@@ -1,0 +1,2 @@
+mkdir -p /tmp/cron
+echo "Hello" >> /tmp/cron/constant.out
