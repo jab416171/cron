@@ -6,9 +6,9 @@ echo "Hello" >> /tmp/cron/constant.out
 
 
 
-cd /tmp
-rm -rf dump/
-git clone git@github.com:jab416171/dump.git
-cd dump/
-tail /tmp/rsync.log > rsync.out
-git add rsync.out && git commit -m "Updating" && git push
+# cd /tmp
+# rm -rf dump/
+# git clone git@github.com:jab416171/dump.git
+# cd dump/
+# tail /tmp/rsync.log > rsync.out
+# git add rsync.out && git commit -m "Updating" && git push
