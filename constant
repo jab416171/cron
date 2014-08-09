@@ -1,10 +1,10 @@
-cd /home/joe/cron
+cd /home/joe/src/cron
 git pull
 
 mkdir -p /tmp/cron
 echo "Hello" >> /tmp/cron/constant.out
 
-
+/home/joe/bin/get_devices_on_network
 
 # cd /tmp
 # rm -rf dump/
