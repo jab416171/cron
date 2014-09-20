@@ -1,1 +1,2 @@
 echo "hourly" >> /tmp/cron/hourly.out
+/home/joe/src/cron/speedtest_cron

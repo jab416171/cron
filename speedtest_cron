@@ -1,0 +1,12 @@
+#!/bin/sh
+filename=/home/joe/speedtest_results
+#result="Ping: 16.494 ms Download: 295.58 Mbits/s Upload: 132.57 Mbits/s"
+#377.12 Mbits/s
+result=$(speedtest-cli --simple)
+download=$(echo $result | grep -oP "(?<=Download: )[0-9\.]* .*?/s")
+upload=$(echo $result | grep -oP "(?<=Upload: )[0-9\.]* .*?/s")
+ping=$(echo $result | grep -oP "(?<=Ping: )[0-9\.]* .*?ms")
+if [ ! -e $filename ]; then
+	echo "\"Date\",\"Upload\",\"Download\",\"Ping\"" > $filename
+fi
+echo "\"$(date)\",\"$upload\",\"$download\",\"$ping\"" >> $filename
